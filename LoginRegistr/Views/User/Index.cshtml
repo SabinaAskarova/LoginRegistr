@@ -1,0 +1,55 @@
+﻿@model List<User>
+<div class="frm">
+<form method="post" asp-controller="User" asp-action="Login">
+
+<label for="username">Istifadeci adinizi daxil edin</label>
+<br />
+<input type="text" id="username" name="username" required placeholder="istifadeci adi"/>
+<br />
+<br />
+<label for="password">Parolunuzu daxil edin</label>
+<br />
+
+<input type="password" id="password" name="password" required placeholder="********"/>
+<br />
+
+<br />
+
+<button class="btn-success" type="submit" >Login</button>
+<br>
+<br />
+
+<p>Hesabiniz yoxdur?</p>
+<a  class="btn btn-save rgstr" asp-controller="User" asp-action="RegistrForm">Registr</a>
+</form>
+<br />
+</div>
+<link href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+
+<style type="text/css">
+    label{
+        font-size:20px;
+        font-weight: 700;
+    }
+    input{
+        font-size: 15px;
+    border: 3px solid orangered;
+    }
+    button{
+    }
+    p{
+     display: contents;
+    }
+    .rgstr{
+        border: 1px solid black;
+        margin-top: -4px;
+    }
+    .rgstr:hover{
+        background-color:green;
+        color:white;
+    }
+    .frm{
+            margin: 100px 471px;
+    width: 400px;
+    }
+</style>

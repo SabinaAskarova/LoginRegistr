@@ -1,0 +1,53 @@
+﻿<div class="frm">
+<form method="post" asp-controller="User" asp-action="Registr">
+<label for="username">Istifadeci adi</label>
+<br />
+
+<input type="password" id="username" name="username" required placeholder="istifadeci adi"/>
+<br />
+<br />
+
+<label for="email">Email</label>
+<br />
+
+<input type="email" id="email" name="email" required placeholder="email"/>
+<br />
+<br />
+
+<label for="password">Parol</label>
+<br />
+<input type="text" id="password" name="password" required placeholder="********"/>
+<br />
+<br />
+<button class="btn btn-save rgstr" type="submit" >Registr</button>
+</form>
+</div>
+
+<style type="text/css">
+    label{
+        font-size:20px;
+        font-weight: 700;
+    }
+    input{
+        font-size: 15px;
+    border: 3px solid darkblue;
+    }
+    button{
+    }
+    p{
+     display: contents;
+    }
+    .rgstr{
+        border: 1px solid black;
+        margin-top: -4px;
+        margin-left: 102px;
+    }
+    .rgstr:hover{
+        background-color:green;
+        color:white;
+    }
+    .frm{
+    margin: 100px 471px;
+    width: 400px;
+    }
+</style>
